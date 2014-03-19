@@ -13,7 +13,7 @@ The download script requires both the `requests` package and `progressbar`.
 
 Making the Plot
 ---------------
-The script that contains the plotting routine is in `create_plot.py` there are some helper routines in `mayavi_plotting_functions.py`. 
+The script that contains the plotting routine is in `create_plot.py` there are some helper routines in `mayavi_plotting_functions.py` and some custom yt fields in `yt_fields.py`. 
 These helper routines have been extracted from the [pysac library](https://bitbucket.org/swatsheffield/pysac).
 
 Requirements for the `create_plot.py` script:
