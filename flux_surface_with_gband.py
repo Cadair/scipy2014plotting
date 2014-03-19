@@ -46,7 +46,7 @@ vfield.origin = (410,735,0)
 #==============================================================================
 # Get GBand
 #==============================================================================
-data = fits.getdata('destretched_00200.fits')[40:960,40:960]
+data = fits.getdata('data/gband_image_00200.fits')[40:960,40:960]
 data = data.astype('f8') #FITS is big endian, VTK says no.
 
 # Create a x and y array for the fits data in the simulation *pixel* coords
