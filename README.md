@@ -3,7 +3,7 @@ scipy2014plotting
 
 My entry for the "SciPy John Hunter Excellence in Plotting Contest"
 
-[See:](https://conference.scipy.org/scipy2014/participate/plotting_contest/) for more information on the competition.
+See: [this](https://conference.scipy.org/scipy2014/participate/plotting_contest/) for more information on the competition.
 
 Getting the Data
 ----------------
@@ -18,9 +18,9 @@ These helper routines have been extracted from the [pysac library](https://bitbu
 
 Requirements for the `create_plot.py` script:
 
-* mayavi /tvtk / vtk
+* mayavi / tvtk / vtk
 * h5py
-* yt
+* yt 2.6.x
 * numpy
 * astropy
 
