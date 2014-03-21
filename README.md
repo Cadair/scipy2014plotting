@@ -5,6 +5,9 @@ My entry for the "SciPy John Hunter Excellence in Plotting Contest"
 
 See: [this](https://conference.scipy.org/scipy2014/participate/plotting_contest/) for more information on the competition.
 
+Most of the data and figures etc. can be found [here](http://figshare.com/articles/SciPy_2014_Plotting_Entry/966454). Apart from the main
+simulation data which for now, is hosted on my own webspace.
+
 Getting the Data
 ----------------
 This plot requires a few hundred megs of data files, which are hosted online and can be downloaded using the `get_data.py` script.
