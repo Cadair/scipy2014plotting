@@ -53,5 +53,5 @@ def download_unbzip(url, filename):
 
 #Download the files
 download('http://files.figshare.com/1425846/gband_image_00200.fits', 'data/gband_image_00200.fits')
-download('http://files.figshare.com/1425798/Fieldline_surface_Slog_p330_0_A20r2_11_r60__B005_00400.vtp', 'data/Fieldline_surface_Slog_p330-0_A20r2-11_r60__B005_00400.vtp')
-download_unbzip('http://cadair.com/Slog_p330-0_A20r2-11_B005_00400.gdf.bz2', 'data/Slog_p330-0_A20r2-11_B005_00400.gdf')
+download('http://files.figshare.com/1425877/Fieldline_surface_Slog_p30_0_A20r2_r60__B005_00400.vtp', 'data/Fieldline_surface_Slog_p30-0_A20r2_r60__B005_00400.vtp')
+download_unbzip('http://cadair.com/Slog_p30-0_A20r2_B005_00400.gdf.bz2', 'data/Slog_p30-0_A20r2_B005_00400.gdf')
