@@ -30,4 +30,3 @@ Requirements for the `create_plot.py` script:
 * numpy
 * astropy
 
-{{md ABSTRACT.md }}
