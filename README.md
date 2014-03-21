@@ -13,9 +13,9 @@ The download script requires both the `requests` package and `progressbar`.
 
 The files required in the data directory are:
 
-* [`'http://files.figshare.com/1425846/gband_image_00200.fits'`]('http://files.figshare.com/1425846/gband_image_00200.fits')
-* [`'http://files.figshare.com/1425877/Fieldline_surface_Slog_p30_0_A20r2_r60__B005_00400.vtp'`]('http://files.figshare.com/1425877/Fieldline_surface_Slog_p30_0_A20r2_r60__B005_00400.vtp')
-* [`'http://cadair.com/Slog_p30-0_A20r2_B005_00400.gdf.bz2'`]('http://cadair.com/Slog_p30-0_A20r2_B005_00400.gdf.bz2')
+* ['http://files.figshare.com/1425846/gband_image_00200.fits']('http://files.figshare.com/1425846/gband_image_00200.fits')
+* ['http://files.figshare.com/1425877/Fieldline_surface_Slog_p30_0_A20r2_r60__B005_00400.vtp']('http://files.figshare.com/1425877/Fieldline_surface_Slog_p30_0_A20r2_r60__B005_00400.vtp')
+* ['http://cadair.com/Slog_p30-0_A20r2_B005_00400.gdf.bz2']('http://cadair.com/Slog_p30-0_A20r2_B005_00400.gdf.bz2')
 
 Making the Plot
 ---------------
