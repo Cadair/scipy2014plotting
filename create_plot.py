@@ -1,8 +1,6 @@
 # -*- coding: utf-8 -*-
 """
-Created on Tue Mar  4 10:22:17 2014
-
-@author: stuart
+This script creates the plot with the data downloaded by 'get_data.py'
 """
 import numpy as np
 import yt.mods as ytm
@@ -41,6 +39,7 @@ vfield = mlab.pipeline.vector_field(cg['velocity_x'][cube_slice] / 1e3,
                                     cg['velocity_z'][cube_slice] / 1e3,
                                     name="Velocity Field",figure=fig)
 vmag = mlab.pipeline.extract_vector_norm(vfield, name="Velocity Mag")
+
 #==============================================================================
 # Get GBand
 #==============================================================================
@@ -80,7 +79,7 @@ slines.seed.visible = False #Hide the seed widget
 slines.parent.scalar_lut_manager.data_range = slines.parent.scalar_lut_manager.data_range + 1e-5
 # Add colour bar
 cbar = mpf.add_colourbar(slines, [0.81, 0.5] ,[0.11,0.31], '', label_fstring='%#3.1e',
-                  number_labels=5, orientation=1,lut_manager='scalar')
+                         number_labels=5, orientation=1,lut_manager='scalar')
 cbar_label = mpf.add_cbar_label(cbar,'Magnetic Field Strength\n               [mT] ')
 cbar_label.property.color = text_color
 slines.parent.scalar_lut_manager.label_text_property.color = (1,1,1)
@@ -124,7 +123,9 @@ vol._volume_property.set_scalar_opacity(otf)
 vol.update_ctf = True
 
 # Add The axes
-axes, outline = mpf.add_axes(np.array(zip(ds.domain_left_edge,ds.domain_right_edge)).flatten()/1e8, obj=bfield)
+axes, outline = mpf.add_axes(np.array(zip(ds.domain_left_edge,
+                                          ds.domain_right_edge)).flatten()/1e8,
+                             obj=bfield)
 axes.axes.property.color = text_color
 axes._title_text_property.color = text_color
 axes.label_text_property.color = text_color
@@ -135,5 +136,5 @@ axes.axes.z_axis_visibility = False
 # Tweak the figure and set the view
 fig.scene.background = (0., 0., 0.)
 mlab.view(-90.0, 75.0, 380.0, [ 70.0,  56.4,  61.5])
-#fig.scene.anti_aliasing_frames = 20
-#fig.scene.save('flux_surface_3d_with_GBandV_t400.png')
+fig.scene.anti_aliasing_frames = 20
+fig.scene.save('flux_surface_3d_with_GBandV_t400.png')
